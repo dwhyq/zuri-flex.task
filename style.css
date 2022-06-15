@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lexend Deca';
+    Font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    background-color: hsl(0, 0%, 95%);
+}
+
+/***Displayed Flex in Main***/
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 10em;
+}
+
+/***First-column styling starts here***/
+
+.first-column {
+    flex-basis:23%;
+    height: 46vh;
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    padding: 35px;
+}
+.first-column h1 {
+    font-family: 'Big Shoulders Display';
+    color: hsl(0, 0%, 95%);
+    padding-top: 30px;
+    padding-bottom: 35px;
+}
+.first-column button {
+    color: hsl(31, 77%, 52%);
+}
+
+/***Second-column styling starts here***/
+
+.second-column {
+    flex-basis:23%;
+    height: 46vh;
+    background-color: hsl(184, 100%, 22%);
+    padding: 35px;
+}
+.second-column h1 {
+    font-family: 'Big Shoulders Display';
+    color: hsl(0, 0%, 95%);
+    padding-top: 30px;
+    padding-bottom: 35px;
+}
+.second-column button {
+    color: hsl(184, 100%, 22%);
+}
+
+/**Third-column styling starts here**/
+
+.third-column {
+    flex-basis:23%;
+    height: 46vh;
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    padding: 35px;
+}
+.third-column h1 {
+    font-family: 'Big Shoulders Display';
+    color: hsl(0, 0%, 95%);
+    padding-top: 30px;
+    padding-bottom: 35px;
+}
+.third-column button {
+    color: hsl(179, 100%, 13%);
+}
+
+
+/***General styling starts here***/
+
+button {
+    background-color: hsl(0, 0%, 95%);
+    padding: 13px 25px;
+    margin-top: 100px;
+    border: none;
+    border-radius: 20px;
+}
+button:hover {
+    background-color: transparent;
+    color: white;
+    border: 2px solid hsla(0, 0%, 100%, 0.75);
+    cursor: pointer;
+}
+
+/**Main Styling Ends Here**/
+
+
+/****Media query starts here****/
+
+/**1440px width starts here**/
+
+@media (min-width:1440px) {
+    button {
+        margin-top: 120px;
+    }
+}
+
+/***375px width starts here***/
+
+@media (max-width:375px) {
+    
+    main {
+        flex-direction: column;
+        margin: 1em;
+    }
+    section {
+       width: 59vw;
+       margin: 1em auto;
+       border-radius: 10px;
+    }
+    section p {
+        font-size: 14px;
+    }
+    section button {
+        margin-top: 70px;
+        padding: 10px 30px;
+        border-radius: 10px;
+    }
+}
